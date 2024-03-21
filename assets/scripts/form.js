@@ -150,10 +150,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
         
         function inputFocus(element, type) {
-            console.log(element, type)
             if (type === 'radio') return;
             let input = element.getElementsByTagName(type)[0]
-            console.log(input)
                 input.focus();
         }
         

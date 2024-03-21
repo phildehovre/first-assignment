@@ -69,7 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
       let percentage = Number(index * 100)
       follower.style = `transform: translateX(${percentage}%)`
     })
-    console.log(item)
     list.appendChild(item)
     
   });
