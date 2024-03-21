@@ -23,6 +23,15 @@
     padding: 0 0 5rem 0;
 }
 
+.arrow {
+    height: 1rem;
+    color: white;
+
+}
+
+.right {
+    animation: shift 1s linear infinite;
+}
 /* #heading {
     color: var(--primary);
     font-size: 5.3rem;
