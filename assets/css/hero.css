@@ -28,7 +28,8 @@
     font-size: 5.3rem;
     margin-bottom: 1rem;
     letter-spacing: -10px;
-    background: url('https://res.cloudinary.com/dtnif6mzm/image/upload/v1711014890/Code%20Institute/pexels-guillaume-meurice-2873671_gvj2wo.jpg') no-repeat center center/cover;
+    /* background: url('https://res.cloudinary.com/dtnif6mzm/image/upload/v1711014890/Code%20Institute/pexels-guillaume-meurice-2873671_gvj2wo.jpg') no-repeat center center/cover; */
+    background-image: var(--gradient);
     background-clip: text;
     -webkit-background-attachment: fixed;
     -moz-background-attachment: fixed;
