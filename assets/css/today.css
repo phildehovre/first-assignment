@@ -65,18 +65,6 @@
     animation: slideOut 0.5s forwards ease-in-out;
 }
 
-/* .card_overlay {
-    content: '';
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.116);
-    z-index: -99;
-} */
-
 .form_card.transition > .card_overlay {
     animation: fadeOut 0.5s forwards ease-in-out;
 }
