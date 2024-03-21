@@ -12,7 +12,7 @@
     align-items: flex-start;
 }
 
-/* #slogan_ctn {
+#slogan_ctn {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,7 +23,7 @@
     padding: 0 0 5rem 0;
 }
 
-#heading {
+/* #heading {
     color: var(--primary);
     font-size: 5.3rem;
     padding: .4em;
@@ -38,7 +38,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-attachment: fixed;
-} */
+}  */
 
 .shift {
     animation: shift 1s linear infinite;
