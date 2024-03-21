@@ -8,8 +8,9 @@
 #hero_ctn {
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 #slogan_ctn {
@@ -35,8 +36,8 @@
 #heading {
     color: var(--primary);
     font-size: 5.3rem;
-    padding: .4em;
-    margin-bottom: 1rem;
+    /* padding: .4em; */
+  
     letter-spacing: -10px;
     background: url('https://res.cloudinary.com/dtnif6mzm/image/upload/c_crop,h_1079,w_1824/v1711014890/Code%20Institute/pexels-guillaume-meurice-2873671_gvj2wo.jpg') no-repeat center center/cover;
     background-clip: text;
@@ -110,6 +111,9 @@
 @media screen and (min-width: 768px) {
     #heading {
         font-size: 12rem;
+        margin-bottom: -2.5rem;
+        flex-direction: row;
+        align-items: flex-end;
     }
     #subheading {
         font-size: 4rem;

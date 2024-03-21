@@ -191,6 +191,7 @@ main {
     position: relative;
     z-index: 10;
     color: white;
+    background-color: var(--primary);
 }
 
 .btn.light {
@@ -241,6 +242,9 @@ main {
 
 
 @media (min-width: 768px) {
+    .section_heading {
+        font-size: 4rem;
+    }
 
     nav {
         padding: 0 0 0 2rem;
