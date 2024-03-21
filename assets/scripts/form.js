@@ -65,8 +65,8 @@ const cardData = [
 ];
 
 function submitForm(form) {
-    console.log("submitting form")
-    console.log(form.entries())
+    // console.log("submitting form")
+    // console.log(form.entries())
 }
 
 
