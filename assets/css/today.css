@@ -1,7 +1,3 @@
-* {
-    /* outline: 1px solid red */
-}
-
 .today_ctn {
     margin: auto;
     display: flex;
@@ -18,9 +14,7 @@
     gap: 1rem;
     justify-content: flex-start;
     align-items: center;
-
 }
-
 
 #cards_ctn {
     position: relative;
@@ -43,7 +37,6 @@
     transition: all 0.3s ease;
     position: relative;
     z-index: 100;
-    /* background-color: var(--primary); */
 }
 
 .form_card > input {
@@ -65,9 +58,6 @@
     animation: slideOut 0.5s forwards ease-in-out;
 }
 
-.form_card.transition > .card_overlay {
-    animation: fadeOut 0.5s forwards ease-in-out;
-}
 
 #entry_ctn {
     display: flex;

@@ -65,8 +65,10 @@ const cardData = [
 ];
 
 function submitForm(form) {
-    // console.log("submitting form")
-    // console.log(form.entries())
+    // console.log form data for further manipulation;
+
+    console.log("submitting form")
+    console.log(form.entries())
 }
 
 
@@ -109,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             }
         }
-        // Creating TEXTAREA;
+        // Creating TEXTAREA and appending it to current card;
         if (cardData[card].type === 'textarea') {
             let textarea = document.createElement('textarea');
             textarea.name = cardData[card].name;
@@ -118,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 inputValue = e.target.value
             });
         }
-        // Creating DATALIST;
+        // Creating DATALIST and appending it to current card;
         if (cardData[card].type === 'datalist') {
             let datalist = document.createElement('datalist');
             datalist.id = cardData[card].id;
@@ -156,7 +158,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         function validateInputAndTransition() {
-            let cardCounter = cardData.length - card;
             if (inputValue) {
                 // Initiate the transition effect;
                 cardDiv.classList.add('transition');
@@ -197,12 +198,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 // Append card to the DOM;
-
 cardContainer.appendChild(cardDiv);
-
-        
-
-}
+    }
 });
 
 

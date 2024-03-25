@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // Define the navbar HTML.
     let navbar = `        
     <nav class="nav_main" role="navigation" aria-label="Main">
     <a href="/" aria-label="Home page">
@@ -24,9 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
     </ul>
 </nav>`
-
+    // Select all placeholders with the class nav_placeholder.
     let navContainers = document.querySelectorAll('.nav_placeholder')
     navContainers.forEach(container => {
+        // Inject the navbar HTML into each placeholder.
         container.innerHTML = navbar
     })
 })
@@ -36,19 +38,25 @@ const navButtons = [
     {name: "About", link: "about.html"},
     {name: "Contact", link: "contact.html"},
     {name: "Start your journey", link: "today.html"},
-
 ]
 
-
+/**
+ * @function
+ * @description This function creates the navbar "follower" button effect.
+*/
 document.addEventListener('DOMContentLoaded', () => {
+    // Create follower element
     const follower = document.querySelector('#follower')
-    follower.style = `
-    opacity: 0;
-    `
+    // Initially invisible
+    follower.style = `opacity: 0;`
+
+    // Select the desktop nav list and add event listeners
   const list = document.querySelector("#desktop_nav")
   list.addEventListener("mouseenter", () => {
-    follower.style = `opacity: 1;`
-  })
+      // Make follower visible
+      follower.style = `opacity: 1;`
+    })
+    // Return to initial state with transition
   list.addEventListener("mouseleave", () => {
     follower.style = `
     opacity: 0; 
@@ -57,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
   navButtons.forEach((button, index) => {
     let item = document.createElement('li')
     item.classList.add('nav_link')
-    item.id = (`index-${index}`)
+    item.setAttribute('role', 'menuitem')
 
     let link = document.createElement('a')
     link.textContent = button.name
@@ -66,7 +74,16 @@ document.addEventListener('DOMContentLoaded', () => {
     item.appendChild(link)
     
     item.addEventListener("mouseenter", () => {
+    /* 
+    Move follower to the position of the hovered element.
+    The follower has a position absolute but its width might change
+    depending on screen size, we must use the follower's own width to calculate
+    the position of the hovered element, width which they will always share.
+    */
       let percentage = Number(index * 100)
+    /* The follower will move by n times its own width of 100%
+    and will always be positionned correctly relative to the hovered element.
+    */
       follower.style = `transform: translateX(${percentage}%)`
     })
     list.appendChild(item)
