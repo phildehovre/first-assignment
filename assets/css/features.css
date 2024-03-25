@@ -24,9 +24,7 @@
     grid-template-rows: 1fr;
 }
 
-.feature > div {
-    /* overflow: hidden; */
-}
+
 
 .feature-header{
     display: flex;
@@ -41,13 +39,13 @@
 .feature-header:hover > i{
     animation: all 0.5s ease-in-out;
 }
-.feature-header:hover > .fa-magnifying-glass{
+.feature:hover .fa-magnifying-glass{
     animation: swoop 0.5s ease-in-out;
 }
-.feature-header:hover > .fa-hammer{
+.feature:hover .fa-hammer{
     animation: smash 0.5s ease-in-out;
 }
-.feature-header:hover > .fa-hand-fist{
+.feature:hover .fa-hand-fist{
     animation: lift 0.5s ease-in-out;
 }
 
