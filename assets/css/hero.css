@@ -61,7 +61,7 @@
     cursor: pointer;
 }
 
-#subheading {
+.subheading {
     color: var(--charcoal);
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -115,7 +115,7 @@
         flex-direction: row;
         align-items: flex-end;
     }
-    #subheading {
+    .subheading {
         font-size: 4rem;
     }
 }
