@@ -4,7 +4,7 @@
     gap: 1rem;
     flex-direction: column;
     max-width: 750px;
-    min-height: 50svw;
+    min-height: 75svh;
     align-items: center;
 }
 
@@ -24,12 +24,12 @@
     align-items: center;
     margin: 0 auto;
     width: 100%;
-    max-width: 300px;
+    max-width: 275px;
 }
 
 .form_card {
     padding: 20px;
-    margin: 20px;
+    /* margin: 20px; */
     width: 100%;
     min-height: 250px;
     border-radius: 10px;
