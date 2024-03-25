@@ -10,7 +10,7 @@
 --lemon-chiffon: hsla(56, 72%, 85%, 1);
 --white: hsla(0, 0%, 100%, 1);
 --red-cmyk: hsla(2, 93%, 56%, 1);
---gradient: linear-gradient(to top right,rgb(6, 7, 32), rgba(5, 59, 141, 1), rgba(59, 33, 156, 0.7))
+--gradient: linear-gradient(to top right,rgb(6, 7, 32), rgba(5, 59, 141, 1), rgba(59, 33, 156, 0.7));
 
 /* Sizes */
 --mobile-clamp: clamp(200px, 75%, 500px);
@@ -225,6 +225,7 @@ main {
 
 .testimonial {
     width: var(--mobile-clamp);
+    margin: 0 auto;
 }
 
 .testimonial.desktop {
@@ -297,6 +298,15 @@ main {
       }
     #mobile_nav {
         display: none;
+    }
+
+    .testimonials_ctn {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .testimonial.desktop {
+        display: block;
     }
 }
 
