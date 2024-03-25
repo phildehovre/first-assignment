@@ -2,29 +2,30 @@ document.addEventListener("DOMContentLoaded", () => {
     // Define the navbar HTML.
     let navbar = `        
     <nav class="nav_main" role="navigation" aria-label="Main">
-    <a href="/" aria-label="Home page">
-        <div id="logo_placeholder" role="img" aria-label="Logo"></div>
-    </a>
-    <ul id="desktop_nav" role="menubar">
-        <div id="follower" aria-hidden="true"></div>
-    </ul>
-    <ul id="mobile_nav" role="menubar">
-        <div class="hamburger_ctn">
-            <div class="bar top"></div>
-            <div class="bar center"></div>
-            <div class="bar bottom"></div>
-            <div class="hamburger_content">
-                <li role="menuitem" style="--order: 1" class="cta">
-                    <a href="today.html">
-                    Start your journey</a><i class="fas fa-arrow-right"></i></li>
-                <li role="menuitem" style="--order: 2"><a href="/">Home</a></li>
-                <li role="menuitem" style="--order: 3"><a href="">Features</a></li>
-                <li role="menuitem" style="--order: 4"><a href="about.html">About</a></li>
-                <li role="menuitem" style="--order: 5"><a href="contact.html">Contact</a></li>
+        <a href="/" aria-label="Home page">
+            <div id="logo_placeholder" role="img" aria-label="Logo"></div>
+        </a>
+        <ul id="desktop_nav" role="menubar">
+            <div id="follower" aria-hidden="true"></div>
+        </ul>
+        <ul id="mobile_nav" role="menubar">
+            <div class="hamburger_ctn">
+                <div class="bar top"></div>
+                <div class="bar center"></div>
+                <div class="bar bottom"></div>
+                <div class="hamburger_content">
+                    <li role="menuitem" style="--order: 1" class="cta">
+                        <a href="today.html">
+                        Start your journey</a><i class="fas fa-arrow-right"></i></li>
+                    <li role="menuitem" style="--order: 2"><a href="/">Home</a></li>
+                    <li role="menuitem" style="--order: 3"><a href="">Features</a></li>
+                    <li role="menuitem" style="--order: 4"><a href="about.html">About</a></li>
+                    <li role="menuitem" style="--order: 5"><a href="contact.html">Contact</a></li>
+                </div>
             </div>
-        </div>
-    </ul>
-</nav>`
+        </ul>
+    </nav>
+    `
     // Select all placeholders with the class nav_placeholder.
     let navContainers = document.querySelectorAll('.nav_placeholder')
     navContainers.forEach(container => {

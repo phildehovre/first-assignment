@@ -228,7 +228,7 @@ main {
     margin: 0 auto;
 }
 
-.testimonial.desktop {
+.testimonial > .desktop {
     display: none;
 }
 
@@ -238,10 +238,7 @@ main {
     height: 100px;
     object-fit: cover;
     border: 5px solid var(--secondary-o1);
-
 }
-
-
 
 @media (min-width: 768px) {
     .section_heading {
@@ -296,6 +293,7 @@ main {
         z-index: 0;
         margin: 0;
       }
+
     #mobile_nav {
         display: none;
     }
@@ -305,7 +303,7 @@ main {
         grid-template-columns: 1fr 1fr;
     }
 
-    .testimonial.desktop {
+    .testimonial > .desktop {
         display: block;
     }
 }
