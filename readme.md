@@ -64,7 +64,20 @@ discern it. This is a small design element that has, in my view, a strong visual
 
 ### Features
 
-### Today
+On desktop, the features are fully visible and there are 6 displayed testimonials.
+
+![features_testimonials_desktop](https://github.com/phildehovre/first-assignment/assets/66724307/46eeb521-4302-4fcd-9c40-26184fc61a36)
+
+On mobile, the features fold into a drawer style design to avoid cluttering and excessive scrolling for the user. Only three testimonials are displayed
+
+![features_testimonials_mobile](https://github.com/phildehovre/first-assignment/assets/66724307/3e804449-604d-4bd5-b63a-c5c9f757b7d6)
+
+Nearing the bottom of the page, the user is prompted once more to start their journey via a call-to-action banner. They have scrolled through the features and have seen what other users think,
+now is a good time to invite them to try the product again without requiring them to scroll back to the initial call-to-action button or the dropdown menu.
+
+![cta_footer](https://github.com/phildehovre/first-assignment/assets/66724307/09fd20dd-0f8b-4abf-b898-cf56adafa580)
+
+#### Today
 
 Upon click on "Start your journey", the user will be prompted to answer a series of questions presented in the form of cards (At this stage the questions a merely placeholders).
 Once all questions for the day have been answered, the user will be presented with a summary of their answers and invited to submit them.
@@ -78,7 +91,18 @@ Upon completion of the form:
 
 ![today_form_completed](https://github.com/phildehovre/first-assignment/assets/66724307/84d22eef-724f-423f-9705-758232d02361)
 
+#### Contact page:
 
+The page shares the same color palette and minimalistic designed found on the homepage.
+
+![contact_page](https://github.com/phildehovre/first-assignment/assets/66724307/b4cd19a3-67be-40c5-9208-5312f373efc2)
+
+#### About page
+
+This page is presents the user with more in-depth information about the product. This is where the links in the "Features" section lead to.
+The design is even more stripped down. The goal here is purely to convey information without any other visual distractions.
+
+![about_page](https://github.com/phildehovre/first-assignment/assets/66724307/89f71db0-fdd8-41d7-889f-79bdbae35aa6)
 
 ## Performance:
 
